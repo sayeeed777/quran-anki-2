@@ -2,7 +2,7 @@ import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { Calendar, TrendingUp, Target, Award } from 'lucide-react';
 import { useStore } from '../store/useStore';
-import { format, subDays, startOfDay } from 'date-fns';
+import { format, subDays } from 'date-fns';
 
 export const Statistics: React.FC = () => {
   const { sessions, streak, totalReviews, goals } = useStore();
